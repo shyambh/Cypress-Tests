@@ -46,3 +46,8 @@ export const accountCreatedMessage =
 
 export const continueButton = "[data-qa=continue-button]";
 //#endregion
+
+//#region Products
+export const productsInfo = ".features_items .single-products";
+export const getProductCountByBrand = ".brands-name span";
+//#endregion

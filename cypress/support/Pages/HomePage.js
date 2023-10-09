@@ -1,5 +1,10 @@
 import * as HomePageObject from "../PageObjects/HomePageObject";
 import { defaultBaseUrl } from "../utility";
+import * as CommonPageObject from "../PageObjects/CommonPageObject";
+
+export function ClickNavBarMenu(menuItem) {
+  cy.get(CommonPageObject.navbarSection).contains(menuItem).click();
+}
 
 export function clickSignUpLink() {
   cy.get(HomePageObject.signUpLink).click();
@@ -53,4 +58,14 @@ export function FillNewUserRegistrationForm() {
   cy.get(HomePageObject.navbarSection)
     .should("contain.text", "Logged in as Test User")
     .and("contain.text", "Logout");
+}
+
+export function GetAllProductsInThePage() {
+  cy.log("Fetching all the products from the page");
+  return cy.get(HomePageObject.productsInfo);
+}
+
+export function GetAllProductSumByBrandName() {
+  cy.log("Getting the product count of each brand");
+  return cy.get(HomePageObject.getProductCountByBrand);
 }
