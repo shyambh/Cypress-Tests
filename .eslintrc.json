@@ -1,0 +1,24 @@
+{
+    "extends": [
+      "plugin:cypress/recommended", 
+      "prettier"
+    ],
+    "plugins": [
+        "cypress"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "cypress/globals": true
+    },
+    "rules":{
+        "cypress/no-unnecessary-waiting": "warn",
+        "cypress/unsafe-to-chain-command": "warn",
+        "cypress/no-assigning-return-values": "warn"
+    }
+  }
