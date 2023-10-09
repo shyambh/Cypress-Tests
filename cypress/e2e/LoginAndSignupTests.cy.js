@@ -20,7 +20,7 @@ describe("template spec", () => {
     cy.url().should("eq", baseUrl + "login");
   });
 
-  it.only("Sign up into the web app", () => {
+  it("Sign up into the web app", () => {
     // The trailing variable which is ms after epoch is used to concat with email address to create a unique user every time
     let trailing = Date.now();
     HomePage.clickSignUpLink();

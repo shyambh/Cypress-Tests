@@ -34,7 +34,7 @@ describe("template spec", () => {
       });
   });
 
-  it.only("", () => {
+  it("Verify that the dress can be filetered and saved to a file", () => {
     HomePage.ClickNavBarMenu("Products");
     ProductPage.selectCategory("Women", "Dress");
 
