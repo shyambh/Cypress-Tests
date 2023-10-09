@@ -28,3 +28,6 @@ node_modules
 cypress/videos
 cypress/screenshots
 js/*.js
+
+# Env files
+*.env.json
