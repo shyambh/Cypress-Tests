@@ -1,0 +1,23 @@
+{
+  "name": "wowflow_tests",
+  "version": "1.0.0",
+  "description": "Wowflow E2E tests using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "e2e": "cypress open --e2e --browser chrome",
+    "component": "cypress open --component --browser chrome",
+    "format": "prettier --write cypress/**/*.{js,spec.js}",
+    "lint": "eslint \"**/*.{js,spec.js}\" --quiet"
+  },
+  "author": "Shyam B",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.0",
+    "cy2": "^2.0.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-cypress": "^2.13.3"
+  }
+}
